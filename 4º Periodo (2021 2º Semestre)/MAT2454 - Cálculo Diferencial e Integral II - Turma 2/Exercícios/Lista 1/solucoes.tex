@@ -1,5 +1,9 @@
 \documentclass{article}
 \usepackage[brazil]{babel}
+\usepackage{fancyhdr}
+
+% Limpar estilos para uso de fancyhdr
+\pagestyle{empty}
 
 \author{Rudah C. Amaral}
 \title{Lista 1 - Cálculo Diferencial e Integral II}
@@ -14,4 +18,9 @@
 \label{TOC}
 \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FIM DO SUMÁRIO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Estilos de fancyhdr
+\pagestyle{fancy}
+\cfoot{\hyperref[TOC]{Retornar para o sumário}}
+\setlength{\headheight}{16pt}
+\rfoot{Página \thepage}
 \end{document}
