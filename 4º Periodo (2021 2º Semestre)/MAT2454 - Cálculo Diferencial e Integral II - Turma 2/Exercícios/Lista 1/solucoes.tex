@@ -552,4 +552,46 @@ Seja $n > 0$ um inteiro ímpar. Mostre que
 \setcounter{equation}{0}
 \clearpage
 
+\subsubsection{(b)}
+Avalie $sin \, 1$ com erro inferior a $10^{-5}$.
+\begin{align}
+  |E_{n+1}(1)|
+  &< 10^{-5} \\
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \frac{|1^{n+2}|}{(n+2)!}
+  &< 10^{-5} \notag \\
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \frac{1}{10^{-5}}
+  &< (n + 2)! \notag \\
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  (n + 2)!
+  &> 10^5
+  && \text{Procuramos o menor n possível que satisfaça essa equação} \notag \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \notag \\
+  &
+  \begin{tabular}{| c | c | r |}
+    \hline
+    \textbf{n} & \textbf{n+2} & \textbf{(n+2)!}  \\ \hline
+            1  &         3    &            6     \\ \hline
+            3  &         5    &          120     \\ \hline
+            5  &         7    &         5040     \\ \hline
+            7  &         9    &       362880     \\ \hline
+  \end{tabular} \notag \\
+  \notag \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  P_7(1)
+  &= \frac{1^1}{1!}
+  - \frac{1^3}{3!}
+  + \frac{1^5}{5!}
+  - \frac{1^7}{7!} \\
+  &= 1
+  - \frac{1}{6}
+  + \frac{1}{120}
+  - \frac{1}{5040} \notag \\
+  &= 0,841468253 \ldots \notag
+\end{align}
+\setcounter{equation}{0}
+\clearpage
+
 \end{document}
