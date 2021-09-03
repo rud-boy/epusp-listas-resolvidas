@@ -886,4 +886,47 @@ $\gamma(t) = (\frac{1}{2}, 1 - t), t \in [-2, 0]$
   \end{tikzpicture}
 \end{center}
 \clearpage
+
+\subsubsection{(f)}
+$\gamma(t) = (e^t cos \, t, e^t sin \, t), t \geq 0$
+\begin{center}
+  \begin{tikzpicture}
+    \begin{axis}[
+      width = 0.75\textwidth,
+      axis x line = center,
+      axis y line = center,
+      axis equal,
+      axis line style = {shorten >= -10pt, thick},
+      xlabel = {$x$},
+      ylabel = {$y$},
+      x label style = {
+        at = {(current axis.right of origin)},
+        anchor = west,
+        xshift = 10pt
+      },
+      y label style = {
+        at = {(current axis.above origin)},
+        anchor = south,
+        yshift = 10pt
+      },
+      xtick distance = 50,
+      ytick distance = 50,
+      minor tick num = 4,
+      grid = both,
+      major grid style = {gray},
+      minor grid style = {gray!25},
+      trig format plots = rad,
+    ]
+    \addplot[
+      red,
+      thick,
+      ->,
+      samples = 500,
+      domain = 0:5,
+      variable = t,
+    ] ({e^t * cos(t)}, {e^t * sin(t)});
+    \end{axis}
+  \end{tikzpicture}
+\end{center}
+\clearpage
 \end{document}
