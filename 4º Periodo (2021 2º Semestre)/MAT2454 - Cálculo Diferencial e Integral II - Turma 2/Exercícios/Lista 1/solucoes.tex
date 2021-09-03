@@ -615,4 +615,44 @@ $x_0 = 0$.
 \end{align}
 \setcounter{equation}{0}
 \clearpage
+
+\subsubsection{(b)}
+Avalie $e$ com erro, em módulo, inferior a $10^{-5}$.
+\begin{align}
+  |E_n(x)|
+  = \left| \frac{f^{(n+1)}(\bar{x})(x-x_0)^{n+1}}{(n + 1)!} \right|
+  &\leq 10^{-5}
+  && 0 < \bar{x} < 1 \\
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \frac{e^{\bar{x}} \cdot |x^{n+1}|}{(n + 1)!}
+  \leq \frac{3 \cdot |1^{n+1}|}{(n + 1)!}
+  &\leq 10^{-5}
+  && \text{O maior erro possível ocorre quando $\bar{x} = 1$} \notag \\
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  3 \cdot 10^5
+  &\leq (n + 1)!
+  && \text{Procuramos o menor $n$ possível que satisfaça essa equação} \notag \\
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \notag \\
+  &
+  \begin{tabular}{| c | c | r |}
+    \hline
+    \textbf{n} & \textbf{n+1} & \textbf{(n+1)!}  \\ \hline
+            1  &         2    &            2     \\ \hline
+            2  &         3    &            6     \\ \hline
+            3  &         4    &           24     \\ \hline
+            4  &         5    &          120     \\ \hline
+            5  &         6    &          720     \\ \hline
+            6  &         7    &         5040     \\ \hline
+            7  &         8    &        40320     \\ \hline
+            8  &         9    &       362880     \\ \hline
+  \end{tabular} \notag \\
+  \notag \\
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  P_8(1)
+  &= \sum_{i = 0}^8 \frac{1}{i!}
+  = 2,71827877 \dots
+\end{align}
+\setcounter{equation}{0}
+\clearpage
 \end{document}
