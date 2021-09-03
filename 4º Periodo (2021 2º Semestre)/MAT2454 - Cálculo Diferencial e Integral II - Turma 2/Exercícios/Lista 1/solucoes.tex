@@ -594,4 +594,25 @@ Avalie $sin \, 1$ com erro inferior a $10^{-5}$.
 \setcounter{equation}{0}
 \clearpage
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EXERCÍCIO 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{6.}
+
+\subsubsection{(a)}
+Determine o Polinômio de Taylor de ordem $n$ na função $f(x) = e^x$ em torno de
+$x_0 = 0$.
+\begin{align}
+  P_n(x)
+  &= f(x_0) + \sum_{i = 1}^n \frac{f^{(i)}(x_0)(x-x_0)^i}{i!} \\
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  f^{n}(x_0)
+  &= f^{n}(0)
+  = e^0
+  = 1 \\
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  P_n(x)
+  &= 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots + \frac{x^n}{n!}
+\end{align}
+\setcounter{equation}{0}
+\clearpage
 \end{document}
