@@ -843,4 +843,47 @@ $\gamma(t) = (2 + cos \, t, 3 + 4 \, sin \, t), t \in [-\pi, \pi]$
   \end{tikzpicture}
 \end{center}
 \clearpage
+
+\subsubsection{(e)}
+$\gamma(t) = (\frac{1}{2}, 1 - t), t \in [-2, 0]$
+\begin{center}
+  \begin{tikzpicture}
+    \begin{axis}[
+      width = 0.75\textwidth,
+      axis y line = center,
+      axis x line = center,
+      axis line style = {shorten >= -10pt, thick},
+      xlabel = {$x$},
+      ylabel = {$y$},
+      x label style = {
+        at = {(current axis.right of origin)},
+        anchor = west,
+        xshift = 10pt
+      },
+      y label style = {
+        at = {(current axis.above origin)},
+        anchor = south,
+        yshift = 10pt
+      },
+      xtick distance = 1,
+      ytick distance = 1,
+      minor tick num = 4,
+      xmin = -2, xmax = 2,
+      ymin = 0, ymax = 4,
+      grid = both,
+      major grid style = {gray},
+      minor grid style = {gray!25},
+    ]
+    \addplot[
+      red,
+      thick,
+      ->,
+      samples = 500,
+      domain = -2:0,
+      variable = t,
+    ] ({1/2}, {1 - t});
+    \end{axis}
+  \end{tikzpicture}
+\end{center}
+\clearpage
 \end{document}
